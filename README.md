@@ -4,17 +4,15 @@
 </div>
 
 ## Background 🗒
-
-Website ini dibuat menggunakan Angular dan API yang digunakan New York Times API
+Website ini dibuat menggunakan Angular dan API yang digunakan [New York Times API](https://developer.nytimes.com/apis)
 
 ## Cara instalasi ⚙
-
 1. Clone repository ini:
 `git clone <repository-url>`
 2. Instal dependensi proyek:
 `npm install`
 3. Tambahkan API Key:
-Dapatkan API Key dari New York Times Developer Portal.
+Dapatkan API Key dari [New York Times Developer Portal](https://developer.nytimes.com/apis).
 4. Jalankan proyek:
 `ng serve`
 
@@ -25,6 +23,12 @@ Dapatkan API Key dari New York Times Developer Portal.
 `git remote add origin https://github.com/Sutrisno42/PortalApps.git`
 `git push origin main`
 
+## Tools 💻
+- Angular
+- Tailwind CSS
+- Github
+- Vercel
+
 ## Deploy Vercel
 - Login ke Vercel dan pilih opsi `"New Project"`
 - Pilih repository `GitHub`
@@ -33,8 +37,4 @@ Dapatkan API Key dari New York Times Developer Portal.
 - Output Directory: Set ke dist/`[nama-aplikasi]` dengan nama proyek Angular
 - Klik `"Deploy"` dan tunggu proses deploy selesai. Setelah selesai, aplikasi Anda akan dapat diakses melalui URL Vercel yang diberikan
 
-## Tools 💻
-- Angular
-- Tailwind CSS
-- Github
-- Vercel
+Link Website https://portal-apps.vercel.app

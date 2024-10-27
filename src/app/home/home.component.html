@@ -1,15 +1,17 @@
 <div class="diff aspect-[20/9]">
     <div class="diff-item-1">
-        <div class="bg-primary text-primary-content grid place-content-center text-xl font-black" style="font-size: clamp(2rem, 5vw, 6rem);">
+        <div class="bg-primary text-primary-content grid place-content-center text-xl font-black"
+            style="font-size: clamp(2rem, 5vw, 6rem);">
             PORTAL BERITA
         </div>
     </div>
     <div class="diff-item-2">
-        <div class="bg-base-200 grid place-content-center text-9xl font-black" style="font-size: clamp(2rem, 5vw, 6rem);">PORTAL BERITA</div>
+        <div class="bg-base-200 grid place-content-center text-9xl font-black"
+            style="font-size: clamp(2rem, 5vw, 6rem);">PORTAL BERITA</div>
     </div>
     <div class="diff-resizer"></div>
 </div>
-<div class="container mx-auto mt-10">
+<!-- <div class="container mx-auto mt-10">
     <div class="flex justify-center gap-2">
         <div class="form-control">
             <label class="input input-bordered flex items-center gap-2">
@@ -24,9 +26,23 @@
             </label>
         </div>
     </div>
+</div> -->
+
+<div class="join flex mx-auto justify-center mt-10">
+    <input class="input input-bordered join-item shadow-xl" 
+    placeholder="Search" 
+    [(ngModel)]="search"
+    (keyup.enter)="searchArticles()"  />
+    <button class="btn join-item rounded-r-full shadow-xl" (click)="searchArticles()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 opacity-70">
+            <path fill-rule="evenodd"
+                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                clip-rule="evenodd" />
+        </svg>
+    </button>
 </div>
 
-<div  class="container mx-auto mt-10">
+<div class="container mx-auto mt-10">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <div *ngFor="let article of articles" class="card bg-base-100 shadow-xl">
             <figure>
